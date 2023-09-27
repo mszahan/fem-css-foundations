@@ -1,6 +1,11 @@
 :root {
     --color-primary: #ff7b54;
     --color-on-text-primary: #ffffff;
+    --color-button-border: var(--color-on-text-primary);
+    --color-button-primary-bg: var(--color-on-text-primary);
+    --color-button-primary-text: var(--color-primary);
+    --color-button-secondary-bg: var(--color-primary);
+    --color-button-secondary-text: var(--color-on-text-primary);
 
     --font-family-regular: "Inter", sans-serif;
 }
@@ -9,6 +14,10 @@ body {
     background-color: var(--color-primary);
     color: var(--color-on-text-primary);
     font-family: var(--font-family-regular);
+}
+
+p {
+    margin: 10px 0px;
 }
 
 a {
@@ -45,4 +54,44 @@ a {
 .nav__list-item {
     margin-inline-end: 36px;
     font-size: 20px;
+}
+
+.button {
+    font-size: 25px;
+    padding: 0 30px;
+    height: 50px;
+    border: 4px solid var(--color-button-border);
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: outline 0.2s linear;
+}
+
+.button:hover,
+.button:focus {
+    outline: 2px solid var(--color-on-text-primary);
+}
+
+.button--primary {
+    background-color: var(--color-button-primary-bg);
+    color: var(--color-button-primary-text);
+}
+
+.button--secondary {
+    background-color: var(--color-button-secondary-bg);
+    color: var(--color-button-secondary-text);
+}
+
+
+.button-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.button:not(button:last-of-type) {
+    margin-inline-end: 20px;
+}
+
+.button__icon {
+    vertical-align: middle;
 }
