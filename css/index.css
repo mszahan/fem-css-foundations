@@ -9,3 +9,31 @@
 .home .main__sub-heading {
     font-size: 30px;
 }
+
+.home .menu path{
+    fill: var(--color-on-text-primary);
+    
+}
+
+.home .close path {
+    fill: var(--color-on-text-primary);
+}
+
+@media(max-width: 1220px) {
+    .home .main__heading{
+        font-size: 50px;
+    }
+    
+}
+
+
+@media(max-width: 590px) {
+    .home .main__heading{
+        font-size: 35px;
+    }
+
+    .home .main__sub-heading{
+        font-size: 20px;
+    }
+    
+}

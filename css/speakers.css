@@ -56,3 +56,18 @@
 .company__bio{
     color: var(--color-on-text-secondary);
 }
+
+@media(width < 1000px) {
+    .all-speakers-wrapper{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width:840px) {
+    .nav{
+        background-color: var(--color-on-text-primary);
+    }
+
+
+}
