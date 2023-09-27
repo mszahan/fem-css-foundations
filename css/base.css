@@ -1,6 +1,7 @@
 :root {
     --color-primary: #ff7b54;
     --color-on-text-primary: #ffffff;
+    --color-on-text-secondary: #000;
     --color-button-border: var(--color-on-text-primary);
     --color-button-primary-bg: var(--color-on-text-primary);
     --color-button-primary-text: var(--color-primary);
@@ -11,11 +12,21 @@
 }
 
 body {
-    background-color: var(--color-primary);
-    color: var(--color-on-text-primary);
+
     font-family: var(--font-family-regular);
 }
 
+.body--primary {
+    background-color: var(--color-primary);
+    color: var(--color-on-text-primary);
+}
+
+.body--secondary {
+    background-color: var(--color-on-text-primary);
+    color: var(--color-primary);
+}
+
+h2,
 p {
     margin: 10px 0px;
 }
@@ -82,6 +93,11 @@ a {
     color: var(--color-button-secondary-text);
 }
 
+.main {
+    padding: 0 60px;
+    margin-top: 100px;
+}
+
 
 .button-container {
     display: flex;
@@ -95,3 +111,4 @@ a {
 .button__icon {
     vertical-align: middle;
 }
+

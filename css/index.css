@@ -1,16 +1,11 @@
 @import url(base.css);
 
 
-.main {
-    padding: 0 60px;
-    margin-top: 100px;
-}
-
-.main__heading {
+.home .main__heading {
     font-size: 80px;
     font-weight: bold;
 }
 
-.main__sub-heading {
+.home .main__sub-heading {
     font-size: 30px;
 }
